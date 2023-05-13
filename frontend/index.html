@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <main class="container">
+        <h1>Forecast</h1>
+        <div class="search-form">
+          <input
+            type="text"
+            class="text-input form-control-lg border border-1"
+            id="cityInput"
+            name="city"
+            placeholder="Search city"
+          />
+          <button
+            class="btn btn-lg search-button"
+            id="searchButton"
+            onclick="searchCity()"
+          >
+            Search
+          </button>
+        </div>
+        <div class="weather-data col-lg-4">
+          <div class="city-title" id="cityTitle">----</div>
+          <h5 id="weatherDescription">----</h5>
+          <img src="" alt="" id="weatherIcon" style="display: none" />
+          <p>Temp: <span id="temp">--</span>°C</p>
+          <p>Min Temp: <span id="minTemp">--</span>°C</p>
+          <p>Max Temp: <span id="maxTemp">--</span>°C</p>
+        </div>
+    </main>
+    <footer>
+      <a id="attribution" href="https://www.freepik.com/"></a>
+    </footer>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
